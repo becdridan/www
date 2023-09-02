@@ -1,0 +1,129 @@
+body {
+	background-color: #FFFFFF;
+	font-family: arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: #224f3f;
+}
+
+h2 {
+	color: #224f3f;
+}
+
+h3 {
+	color: #224f3f;
+}
+
+h4 {
+	color: #224f3f;
+}
+
+a {
+	color: #224f3f;
+}
+
+code {
+	border: 1pt solid #AEBDCC;
+	border-style: solid;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	margin: 50px 25px;
+}
+
+#contact {
+	padding-left: 200px;
+}
+
+#menu { 
+	position: fixed;
+	padding: 5px;
+	top: 20px;
+	left: 5px;
+	width: 230px;
+	border-width: 15px;
+	border-style: groove;
+	border-color: #abc3ac;
+	font-size: 120%;
+	font-weight: bold;
+	text-align: center;
+	background-color: #abc3ac;
+	color: white;
+	list-style: none;
+}
+
+#menu a {
+	color: white;	
+	text-decoration: none;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+}
+
+#menuint {
+	background-color: white;
+	color: #22464f;
+	padding-right: 10px;
+}
+
+#menuint ul {
+	list-style: none;
+	margin: 5px;
+	padding: 5px;
+}
+
+#menuint a {
+	color: #22464f;
+	text-decoration: none;
+}
+
+#menuint li {
+	text-align: left;
+}
+
+#menuint li a:hover {
+	text-decoration: underline;
+}
+#menuint li ul {
+	display: none;
+}
+#menuint li:hover ul {
+	display: block;
+}
+
+#menuint li ul li a{
+	color: black;
+	font-size: 90%;
+}
+
+#content {
+	position: absolute;
+	top: 20px;
+	left: 270px;
+	margin: 0 10px 0 10px;
+	border-width: 3px;
+	border-style: ridge;
+	border-color: #22464f;
+	padding: 10px;
+}
+
+#recipe {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#ingredients {
+	padding-left: 20px;
+}
+
+#method {
+	list-style-type: decimal;
+}
+
+/* testing
+#project table, th, td {
+	border: 1px solid black;
+}
+*/

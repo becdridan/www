@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Rebecca Dridan - Software</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="becsstyle.css" />
+		<link rel="shortcut icon" href="favicon.ico" />
+	</head>
+	<body>
+
+	<div id="menu">
+		<a href="research.html">Home</a>
+
+		<hr/>
+
+		<div id="menuext">
+			<span class="current">Software</span> <br/>
+			<div id="menuint">
+				<a href="#RMRS">RMRS manipulation</a><br/><br/>
+				<a href="#FSPP">FSP tokenisation</a><br/><br/>
+				<a href="#EDM">EDM evaluation</a><br/><br/>
+			</div>
+			<a href="recipes.html">Recipes</a><br/>
+		</div>
+	</div>
+
+	<div id="content">
+		<h1>Software</h1>
+
+		Here are a few Perl modules I've put together for use with DELPH-IN tools,
+		grammars and formalisms.
+
+		<h4><a name="RMRS"></a>Perl modules for manipulating RMRS structures</h4>
+
+		Some of these modules are currently being overhauled to better represent
+		the RMRS formalism, but the versions here should be compatible with each
+		other and work as described in my <a href="papers/dridan-thesis.pdf">
+		Master's thesis</a>.
+
+		<ul>
+			<li><a
+			href="code/Delphin-RMRS-1.023.tar.gz">Delphin::RMRS</a><br/>
+
+			A class providing access to the RMRS object attributes and output
+			methods.</li>
+			
+			<li><a href="code/Delphin-RMRS_XML-1.008.tar.gz">Delphin::RMRS_XML</a>
+			<br/>
+
+			Sub class of Delphin::RMRS which creates an RMRS object from an XML
+			file that complies with the DTD found in: <br/>
+
+			  Copestake, Ann. 2004. Robust Minimal Recursion Semantics.
+			  Working Paper
+			  [<a href="http://www.cl.cam.ac.uk/~aac10/papers/rmrsdraft.pdf">
+			  pdf</a>]</li>
+
+			<li><a href="code/Delphin-Comparator-1.013.tar.gz">
+				Delphin::Comparator</a><br/>
+
+				This module defines the Delphin::Comparator class that can be used
+				to compare to Delphin::RMRS objects.</li>
+
+			<li><a href="code/Delphin-Matcher-1.008.tar.gz">Delphin::Matcher</a>
+			<br/>
+
+			A base Matcher class for comparing predicates from Delphin::RMRS
+			objects. </li> 
+			
+		</ul>
+
+
+		<h4><a name="FSPP"></a>
+			Perl module to emulate LISP FSP tokenisation mechanism</h4>
+		<ul>
+			<li><a href="code/Delphin-FSPP-1.531.tar.gz">Delphin::FSPP</a><br/>
+
+			A Perl module to tokenise a sentence according to the finite state
+			rules in the preprocesser.fsr files in DELPH-IN grammars.  It emulates
+			the LISP functionality in LKB and PET. Useful for those who need a
+			richer input format but still wish to use the expected tokenisation.
+			Includes example scripts showing how to merge FSR tokenisation with
+			that of a POS tagger.
+			</li>
+
+
+		</ul>
+
+		<h4><a name="EDM"></a> EDM evaluation</h4>
+		<ul>
+			<li><a href="http://svn.delph-in.net/mu/evaluation/EDM/">EDM</a><br/>
+
+			A granular evaluation metric for DELPH-IN analyses.
+			Current version available from SVN using:<br>
+			<p>
+			<code>svn co http://svn.delph-in.net/mu/evaluation/EDM/trunk</code>
+			</li>
+		</ul>
+
+	</div>
+	</body>
+</html>
